@@ -2,6 +2,11 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@/*": [
+          "app/*"
+      ]
+  },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -10,6 +15,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "skipLibCheck": true,
     "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
